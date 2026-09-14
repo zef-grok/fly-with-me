@@ -3,6 +3,7 @@
 // says stands here, a bird, a camera and a day. The page (index.html) holds
 // the markup and the import map; the library (library/) holds every place.
 import * as THREE from 'three';
+import { startAmbientBed } from './ambient-bed.js';
 import { buildBird, animateBird } from './birds.js';
 import { plumageCatalog, paintMarking, plumageTile } from './plumage.js';
 import {
@@ -3141,7 +3142,8 @@ function updateMoments(dt, sound = true) {
 
 // ---------------------------------------------------------------------------
 // Sound: everything synthesized. Wind that follows altitude and speed, water
-// near the ocean, a pentatonic chime now and then, a soft brush per wing beat.
+// near the ocean, a pentatonic chime now and then, a soft brush per wing beat,
+// and a soft ambient pad bed (original generative — no samples / no OST).
 // ---------------------------------------------------------------------------
 const audio = (() => {
   let ctx = null,
@@ -3236,6 +3238,11 @@ const audio = (() => {
     dl.frequency.value = 2400;
     delay.connect(dl).connect(fb).connect(delay);
     delay.connect(master);
+    // Ambient bed: very quiet sine pad under wind/water. Original Web Audio
+    // synthesis (ZEF owns this graph). Routes only through `master`, so mute,
+    // volume, pause, visibility suspend, and Begin-gate apply unchanged.
+    // GROK-13 / Phase 2 — generative only; no sampled soundtrack files.
+    startAmbientBed(ctx, master);
   }
   function chime(count = 1) {
     if (!ctx) return;
