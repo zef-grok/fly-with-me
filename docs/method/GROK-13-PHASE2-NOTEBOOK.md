@@ -37,69 +37,9 @@ Sound is **entirely synthesized** in [src/main.js](../../src/main.js) (Web Audio
 ## Skills that fired
 
 1. **architect** — reuse existing audio bus; refuse new asset pipeline.
-
-<details>
-<summary>pstack skill card — architect</summary>
-
-**Source:** pstack `architect` SKILL.md (plugin). Not owned by upstream fly-with-me.
-
-Sketch types, signatures, and module structure before code; stay in the loop while implementation fills in.
-
-**Non-negotiables**
-- Ground surrounding systems before sketching (skip only for true greenfield)
-- Design before implementing; scrap the sketch if implementation fights it
-- Prefer a smaller public surface that hides more complexity
-
-</details>
-
 2. **principle-boundary-discipline** — bed only through `master`.
-
-<details>
-<summary>pstack skill card — principle-boundary-discipline</summary>
-
-**Source:** pstack `principle-boundary-discipline` SKILL.md (plugin). Not owned by upstream fly-with-me.
-
-Concentrate guards at system boundaries; trust internal types; keep business logic in pure functions.
-
-**Non-negotiables**
-- Validate/narrow/handle errors at the boundary (CLI, config, network, library↔engine)
-- Inside: typed data, no redundant re-validation
-- Thin shell; pure functions for domain logic
-
-</details>
-
 3. **principle-laziness-protocol** — small module + one call site; no LFO.
-
-<details>
-<summary>pstack skill card — principle-laziness-protocol</summary>
-
-**Source:** pstack `principle-laziness-protocol` SKILL.md (plugin). Not owned by upstream fly-with-me.
-
-Bias toward deletion and the smallest change that solves the problem.
-
-**Non-negotiables**
-- Prefer deletion / minimize the diff
-- Flat call hierarchy; consolidate decisions to one source of truth
-- Question new signal-threading through layers — find a more direct path
-
-</details>
-
 4. **Prove** — local gates + green Actions check-run on Linear GROK-13.
-
-<details>
-<summary>pstack skill card — principle-prove-it-works</summary>
-
-**Source:** pstack `principle-prove-it-works` SKILL.md (plugin). Not owned by upstream fly-with-me.
-
-Verify against the real artifact — not a proxy or “it compiles.”
-
-**Non-negotiables**
-- Check the real thing (flight-checks / node gates / check-run URL), not agent self-report
-- Trust artifacts over summaries
-- Prefer a re-runnable scripted check when you can
-
-</details>
-
 
 ---
 
