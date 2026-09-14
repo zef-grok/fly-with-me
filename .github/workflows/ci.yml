@@ -15,3 +15,5 @@ jobs:
         run: node tools/validate-library-node.mjs
       - name: Galaxy CPU checks
         run: node tests/galaxy-checks.mjs
+      - name: Ambient bed wiring (GROK-13)
+        run: node tools/validate-ambient-bed.mjs
