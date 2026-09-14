@@ -21,3 +21,5 @@ jobs:
         run: node tools/validate-mistvale-slice.mjs
       - name: Larch foliage slice (GROK-17)
         run: node tools/validate-larch-slice.mjs
+      - name: Aspen foliage slice (GROK-18)
+        run: node tools/validate-aspen-slice.mjs
