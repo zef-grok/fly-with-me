@@ -19,3 +19,5 @@ jobs:
         run: node tools/validate-ambient-bed.mjs
       - name: Mistvale/willow scenery slice (GROK-16)
         run: node tools/validate-mistvale-slice.mjs
+      - name: Larch foliage slice (GROK-17)
+        run: node tools/validate-larch-slice.mjs
