@@ -1,6 +1,4 @@
-/**
- * GROK-16 static gate: willow species + mistvale biome registered.
- */
+/** GROK-16 static gate: willow species + mistvale biome registered. */
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -13,7 +11,7 @@ const mistvale = fs.readFileSync(path.join(root, 'library/biomes/mistvale.js'), 
 for (const [label, src, needles] of [
   ['willow.js', willow, ["id: 'willow'", "leaf: 'elder'", "shape: 'fan'"]],
   ['mistvale.js', mistvale, ["id: 'mistvale'", 'willow: 1', 'climate: [0.36, 0.66, 0.34]']],
-  ['index.js', index, ["from './species/willow.js'", "from './biomes/mistvale.js'", ', willow]', ', mistvale]']],
+  ['index.js', index, ["from './species/willow.js'", "from './biomes/mistvale.js'", 'willow', 'mistvale']],
 ]) {
   for (const n of needles) {
     if (!src.includes(n)) {
@@ -21,6 +19,14 @@ for (const [label, src, needles] of [
       process.exit(1);
     }
   }
+}
+if (!/\bwillow\b/.test(index.split('export const species')[1] || '')) {
+  console.error('validate-mistvale-slice: willow not in species export');
+  process.exit(1);
+}
+if (!/\bmistvale\b/.test(index.split('export const biomes')[1] || '')) {
+  console.error('validate-mistvale-slice: mistvale not in biomes export');
+  process.exit(1);
 }
 if (/Skyrim|Bethesda/i.test(willow + mistvale)) {
   console.error('validate-mistvale-slice: forbidden IP marker');

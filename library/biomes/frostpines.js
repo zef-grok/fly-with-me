@@ -15,6 +15,7 @@ export default defineBiome({
   },
   species: {
     pine: 1,
+    larch: 0.55,
   },
   density: 0.9,
   grass: {
