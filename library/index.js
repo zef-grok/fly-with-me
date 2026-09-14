@@ -13,6 +13,7 @@ import moor from './biomes/moor.js';
 import autumn from './biomes/autumn.js';
 import jungle from './biomes/jungle.js';
 import blossom from './biomes/blossom.js';
+import mistvale from './biomes/mistvale.js';
 
 import oak from './species/oak.js';
 import elder from './species/elder.js';
@@ -23,6 +24,7 @@ import palm from './species/palm.js';
 import blossomTree from './species/blossom.js';
 import deadwood from './species/deadwood.js';
 import cypress from './species/cypress.js';
+import willow from './species/willow.js';
 
 import ring from './ruins/ring.js';
 import colonnade from './ruins/colonnade.js';
@@ -66,8 +68,8 @@ import bar from './markings/bar.js';
 import barred from './markings/barred.js';
 import rump from './markings/rump.js';
 
-export const biomes = [wildsong, elderwood, steppe, badlands, dunes, frostpines, moor, autumn, jungle, blossom];
-export const species = [oak, elder, pine, acacia, birch, palm, blossomTree, deadwood, cypress];
+export const biomes = [wildsong, elderwood, steppe, badlands, dunes, frostpines, moor, autumn, jungle, blossom, mistvale];
+export const species = [oak, elder, pine, acacia, birch, palm, blossomTree, deadwood, cypress, willow];
 export const ruins = [ring, colonnade, gate, terrace, monolith];
 export const props = [boulders, cairns];
 // The first bird is the one a new visitor flies, in its own colors; the perch lists this order.
