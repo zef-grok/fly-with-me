@@ -55,6 +55,7 @@ import sand from './plumages/sand.js';
 import sky from './plumages/sky.js';
 import coal from './plumages/coal.js';
 import slate from './plumages/slate.js';
+import mist from './plumages/mist.js';
 
 import plain from './markings/plain.js';
 import cap from './markings/cap.js';
@@ -72,7 +73,7 @@ export const props = [boulders, cairns];
 // The first bird is the one a new visitor flies, in its own colors; the perch lists this order.
 export const birds = [gull, eagle, swallow, crane, owl];
 // Plumages recolor any kind; the perch lists them after the kind's own colors, in this order.
-export const plumages = [dove, chestnut, ember, jay, kingfisher, raven, snow, dawn, moss, oriole, plum, ash, sand, sky, coal, slate];
+export const plumages = [dove, chestnut, ember, jay, kingfisher, raven, snow, dawn, moss, oriole, plum, ash, sand, sky, coal, slate, mist];
 // The first marking paints nothing: it is what a kind in its own colors wears.
 // The rest are spread over the catalog by rule, so every kind shows each one.
 export const markings = [plain, cap, mask, throat, collar, bar, barred, rump];
