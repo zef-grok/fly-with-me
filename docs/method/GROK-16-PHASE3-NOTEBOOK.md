@@ -1,15 +1,17 @@
-# GROK-16 Phase 3 — Notebook (dissection + mistvale/willow)
+# GROK-16 Phase 3 — Notebook (mistvale / willow)
 
-**Status:** Phase 3 delivered — hard stop  
+**Status:** Phase 3 Done  
 **Linear:** [GROK-16](https://linear.app/zef-grok/issue/GROK-16/fly-with-me-phase-3-potato-dissection-one-foliagescenery-slice)  
 **Author:** potato · Reports to Chief · No spend / publish / deploy  
 **Prior:** GROK-12/13 Done; skill cards rejected (GROK-15 reverted)
 
+Read with: [VISION.md](../../VISION.md) · [AGENTS.md](../../AGENTS.md) · [CONTRIBUTING.md](../../CONTRIBUTING.md)
+
 ---
 
-## Dissection (summary)
+## How this slice was approached
 
-See [GROK-16-REPO-DISSECTION.md](./GROK-16-REPO-DISSECTION.md). Read VISION → AGENTS → `library/contract.js` → mirror an existing biome/species. Prefer `library/` over `src/`.
+Read VISION → AGENTS → `library/contract.js` → mirror an existing biome/species. Prefer `library/` over `src/`.
 
 ---
 
@@ -38,9 +40,9 @@ Mood: calm, soft vale — *atmosphere* only; **no** Bethesda/Skyrim assets, name
 
 | Gate | Result |
 |---|---|
-| Dissection on fork + zef `docs/method/` | Pass |
 | One original foliage/biome library slice | Pass (`willow` + `mistvale`) |
-| CI green + check-run on GROK-16 | Pass (URL on Linear) |
+| Notebook on fork + zef | Pass |
+| CI green + check-run on GROK-16 | Pass |
 | No music / Pages / dragon / arena / skill cards | Pass |
 
 ---
@@ -54,4 +56,4 @@ Mood: calm, soft vale — *atmosphere* only; **no** Bethesda/Skyrim assets, name
 
 ## Hard stop
 
-One slice + notebooks. No further scenery or sound until a new commission.
+One slice + notebook. Standalone dissection file removed per CEO (GROK-17 cleanup).
