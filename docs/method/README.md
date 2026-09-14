@@ -10,8 +10,11 @@ Copies for reading **inside this repo**. Canonical archive also on [`zef-grok/ze
 | 1 | Done | Mist plumage (`library/`) |
 | 2 | Done | Generative ambient pad (sound deprioritized going forward) |
 | 3 | Done | Mistvale biome + willow species |
-| 4 | In progress (GROK-17) | Next foliage/scenery slice + notebook only |
-| 5+ | Planned | More scenery/graphics slices, one at a time; optional refactor later if commissioned |
+| 4 | In progress ([GROK-17](https://linear.app/zef-grok/issue/GROK-17/fly-with-me-phase-4-one-scenery-slice-notebook-only)) | Foliage/scenery slice + notebook only |
+| 5 | Backlog ([GROK-18](https://linear.app/zef-grok/issue/GROK-18/fly-with-me-phase-5-last-runway-slice-notebook-hard-stop-after)) | Last runway scenery/graphics slice + notebook |
+| 6+ | **Frozen** | No Phase 6 until CEO asks (then: still learning vs switch objective) |
+
+**Runway cap:** Phase 4 + Phase 5, then major CEO checkpoint.
 
 **Trail rule:** notebook only (skills / gates / mistakes / what changed). No standalone dissection files. No skill cards. Original art only — no Bethesda/Skyrim IP.
 
