@@ -11,7 +11,7 @@ const frost = fs.readFileSync(path.join(root, 'library/biomes/frostpines.js'), '
 for (const [label, src, needles] of [
   ['larch.js', larch, ["id: 'larch'", "leaf: 'needle'", "shape: 'cone'", "tint: 'barkWarm'"]],
   ['frostpines.js', frost, ['larch: 0.55']],
-  ['index.js', index, ["from './species/larch.js'", ', larch]']],
+  ['index.js', index, ["from './species/larch.js'"]],
 ]) {
   for (const n of needles) {
     if (!src.includes(n)) {
@@ -19,6 +19,10 @@ for (const [label, src, needles] of [
       process.exit(1);
     }
   }
+}
+if (!/\blarch\b/.test(index.split('export const species')[1] || '')) {
+  console.error('validate-larch-slice: larch not in species export');
+  process.exit(1);
 }
 if (/Skyrim|Bethesda/i.test(larch + frost)) {
   console.error('validate-larch-slice: forbidden IP marker');

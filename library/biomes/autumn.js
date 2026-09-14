@@ -15,7 +15,8 @@ export default defineBiome({
   },
   species: {
     birch: 1,
-    oak: 0.3,
+    aspen: 0.7,
+    oak: 0.25,
   },
   density: 0.85,
   grass: {

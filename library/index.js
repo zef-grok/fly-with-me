@@ -26,6 +26,7 @@ import deadwood from './species/deadwood.js';
 import cypress from './species/cypress.js';
 import willow from './species/willow.js';
 import larch from './species/larch.js';
+import aspen from './species/aspen.js';
 
 import ring from './ruins/ring.js';
 import colonnade from './ruins/colonnade.js';
@@ -70,7 +71,7 @@ import barred from './markings/barred.js';
 import rump from './markings/rump.js';
 
 export const biomes = [wildsong, elderwood, steppe, badlands, dunes, frostpines, moor, autumn, jungle, blossom, mistvale];
-export const species = [oak, elder, pine, acacia, birch, palm, blossomTree, deadwood, cypress, willow, larch];
+export const species = [oak, elder, pine, acacia, birch, palm, blossomTree, deadwood, cypress, willow, larch, aspen];
 export const ruins = [ring, colonnade, gate, terrace, monolith];
 export const props = [boulders, cairns];
 // The first bird is the one a new visitor flies, in its own colors; the perch lists this order.
