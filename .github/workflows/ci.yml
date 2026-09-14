@@ -17,3 +17,5 @@ jobs:
         run: node tests/galaxy-checks.mjs
       - name: Ambient bed wiring (GROK-13)
         run: node tools/validate-ambient-bed.mjs
+      - name: Mistvale/willow scenery slice (GROK-16)
+        run: node tools/validate-mistvale-slice.mjs
